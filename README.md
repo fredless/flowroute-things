@@ -19,3 +19,20 @@ Block of 31: 14087407667 - 14087407697
 ```
 
 Can also search for interesting digit sequences, see code.
+
+## [did_block_purchaser.py](did_block_purchaser.py)
+Buy continguous blocks of DIDs available for purchase
+
+With the following specification:
+``` python
+STARTS_WITH = 14085551200
+ENDS_WITH = 14085551214
+```
+
+...some typical output:
+```
+Purchasing number: 14085551200... purchased
+Purchasing number: 14085551201... purchased
+...
+Purchasing number: 14085551214... purchased
+```
