@@ -65,11 +65,13 @@ def main():
     if STARTS_WITH < 12012000000 or STARTS_WITH > 19989999999 or \
         ENDS_WITH < 12012000000 or ENDS_WITH > 19989999999:
         print(ERROR_INVALID)
-        quit()
+        raise SystemExit
 
     # check if block too big
     if (ENDS_WITH - STARTS_WITH +1) > MAX_PURCHASE:
         print(f'{ERROR_LARGE}{MAX_PURCHASE}')
+        raise SystemExit
+
 
     current = STARTS_WITH
     while current <= ENDS_WITH:
