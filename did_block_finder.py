@@ -16,8 +16,8 @@
 # along with flowroute-things.  If not, see <http://www.gnu.org/licenses/>.
 
 """
-Prompts for an E164 prefix and a minimum block size, then queries flowroute for available
-contiguous number blocks.
+Using E164 prefix and a minimum block size, queries flowroute for available contiguous
+number blocks.
 """
 
 import itertools
